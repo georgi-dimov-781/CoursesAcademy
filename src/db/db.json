@@ -1,0 +1,98 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Andrei Jekov",
+      "email": "jekov@abv.bg",
+      "username": "Jekov",
+      "password": "12345",
+      "picture": "https://picsum.photos/200/300",
+      "isBlocked": false,
+      "role": 2
+    },
+    {
+      "id": 2,
+      "name": "Kiril",
+      "email": "kiril@abv.bg",
+      "username": "Kiro",
+      "password": "12345",
+      "picture": "https://picsum.photos/200/300",
+      "isBlocked": false,
+      "role": 1
+    },
+    {
+      "id": 3,
+      "name": "Georgi",
+      "email": "joro@gmail.com",
+      "username": "Jorkata",
+      "password": "12345",
+      "picture": "https://picsum.photos/200/300",
+      "isBlocked": false,
+      "role": 1
+    },
+    {
+      "id": 4,
+      "name": "Svetlio",
+      "email": "sv@abv.bg",
+      "username": "Svet",
+      "password": "12345",
+      "picture": "https://picsum.photos/200/300",
+      "isBlocked": false,
+      "role": 2
+    },
+    {
+      "id": 5,
+      "name": "Lili",
+      "email": "lili@abv.bg",
+      "username": "Lili",
+      "password": "12345",
+      "picture": "https://picsum.photos/200/300",
+      "isBlocked": false,
+      "role": 2
+    }
+  ],
+  "courses": [
+    {
+      "id": "2635f0a4-8316-46e1-8bdc-6852ad499644",
+      "title": "C# Fundamentals",
+      "description": "Welcome to the official web site of the free book \"Fundamentals of Computer Programming with C#\". It aims to provide novice programmers solid foundation of basic knowledge regardless of the programming language. This book covers the fundamentals of programming that have not changed sig",
+      "rating": 56,
+      "assignees": []
+    },
+    {
+      "id": "40574759-502a-4f01-8da4-095d21440aa2",
+      "title": "Java Fundamentals",
+      "description": "This page is your source to download or update your existing Java Runtime Environment (JRE, Java Runtime), also known as the Java plug-in (plugin), Java ...",
+      "rating": 74,
+      "assignees": []
+    },
+    {
+      "id": "b4afe438-e60a-4e7c-9984-44db0ae92221",
+      "title": "Angular Course",
+      "description": "Angular is a platform for building mobile and desktop web applications. Join the community of millions of developers who build compelling user interfaces with ...",
+      "rating": 68,
+      "assignees": []
+    },
+    {
+      "id": "8cf7dff8-958d-46eb-a7c9-13a54ea93999",
+      "title": "Learn Ruby",
+      "description": "Learn to program in Ruby, a ﬂexible and beginner-friendly language used to create sites like Codecademy. Start. Overview Syllabus. Why Learn Ruby?",
+      "rating": 55,
+      "assignees": []
+    },
+    {
+      "id": "WNAv8bt",
+      "title": "Web Development with PHP",
+      "description": "PHP is a popular general-purpose scripting language that is especially suited to web ... All PHP 7.3 users are encouraged to upgrade to this version. For source ...",
+      "rating": 89,
+      "assignees": []
+    },
+    {
+      "id": "8llih5U",
+      "title": "Drupal Development",
+      "description": "Drupal is an open source platform for building amazing digital experiences. It's made by a dedicated community. Anyone can use it, and it will always be free.",
+      "rating": 98,
+      "assignees": []
+    }
+  ]
+}

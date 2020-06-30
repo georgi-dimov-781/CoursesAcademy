@@ -1,0 +1,85 @@
+<div class="login-holder">
+	<div class="container">
+		<div class="form-holder bg-light">
+			<h3>Register</h3>
+			<form [formGroup]="registerForm" (ngSubmit)="onRegister()">
+				<div class="row">
+					<div class="col-12">
+						<div class="form-group">
+							<label>Username</label>
+							<input type="text" class="form-control" formControlName="username">
+							<div class="error" *ngIf="username?.errors">
+								<span class="text-danger" *ngIf="username.errors.required">
+									Required.
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="form-group">
+							<label>Email</label>
+							<input type="text" class="form-control" formControlName="email">
+							<div class="error" *ngIf="email?.errors">
+								<span class="text-danger" *ngIf="email?.errors?.required">
+									Required.
+								</span>
+								<span class="text-danger" *ngIf="email?.errors?.email">
+									Not valid email syntax.
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="form-group">
+							<label>Password</label>
+							<input type="password" class="form-control" formControlName="password">
+							<div class="error" *ngIf="password?.errors">
+								<span class="text-danger" *ngIf="password?.errors?.required">
+									Required.
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="form-group">
+								<label>Name</label>
+								<input type="text" class="form-control" formControlName="name">
+								<div class="error" *ngIf="name?.errors?.required">
+									<span class="text-danger">
+										Required.
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="form-group">
+							<label>Picture</label>
+							<input type="text" class="form-control" formControlName="picture">
+							<div class="error" *ngIf="name?.errors?.required">
+								<span class="text-danger">
+									Required.
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col m-1">
+						<button type="submit" class="btn btn-primary" [disabled]="!isFormValid">Register</button>
+					</div>
+					<div class="col m-1">
+						<a routerLink="/auth/login" class="btn btn-primary">Log in</a>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

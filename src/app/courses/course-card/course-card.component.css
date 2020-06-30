@@ -1,0 +1,14 @@
+.course-card{
+	border-radius: 10px;
+	border: 3px solid #00bcd4 ;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    background-color: black;
+    opacity: 0.8;
+    font-family: "Times New Roman", Times, monospace;
+    border-radius: 15px  50px;
+	
+}
+

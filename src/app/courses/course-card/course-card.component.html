@@ -1,0 +1,31 @@
+<div class="course-card bg-light p-3">
+	<div class="row">
+		<div class="col-sm">
+			<h3>{{ course.title }}</h3>
+		</div>
+		<div class="col-sm text-right">
+			<button class="assign-btn btn btn-info m-1" *ngIf="isLoggedIn" [disabled]="canAssign" title="Assign" (click)="onAssignClick()">Assign to this course</button>
+			<span class="edit-btn btn btn-success m-1" *ngIf="canManipulate" (click)="onCourseEdit()">Edit</span>
+			<span class="delete-btn btn btn-danger m-1" *ngIf="canManipulate" tooltip="Delete" placement="top"
+				container="body"title="Delete" (click)="onDeleteClicked()">X</span>
+		</div>
+	</div>
+	<div class="info-holder">
+		<div class="description">
+			<strong>Description: </strong><span>{{ course.description }}</span>
+		</div>
+		<div class="rating" *ngIf="canSee">
+			<strong>Rating: </strong><span>{{ course.rating }} %</span>
+			<form class="form-inline mt-1 mb-1" [formGroup]="ratingForm" (ngSubmit)="onFormSubmit($event)" *ngIf="canRate && canRateOnce">
+				<input class="form-control" name="rating" formControlName="rating">
+				<button type="submit" class="ml-1 btn btn-warning" [disabled]="!isFormValid">Rate it</button>
+			</form>
+		</div>
+		<div class="assignee" *ngIf="canSee">
+			<strong>Assignees: </strong>
+			<div *ngFor="let assignee of course.assignees">
+				{{ assignee.name }}
+			</div>
+		</div>
+	</div>
+</div>
